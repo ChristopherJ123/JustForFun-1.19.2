@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 1000,
+  "experience": 69420,
+  "ingredient": {
+    "item": "justforfun:bryan_ore"
+  },
+  "result": "justforfun:bryan_ingot"
+}

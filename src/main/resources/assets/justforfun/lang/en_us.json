@@ -4,5 +4,11 @@
   "block.justforfun.bryan_block": "Bryan Block",
   "block.justforfun.bryan_ore": "Bryan Ore",
 
+  "item.justforfun.bryan_sword": "Bryan Sword",
+  "item.justforfun.bryan_axe": "Bryan Axe",
+  "item.justforfun.bryan_pickaxe": "Bryan Pickaxe",
+  "item.justforfun.bryan_shovel": "Bryan Shovel",
+  "item.justforfun.bryan_hoe": "Bryan Hoe",
+
   "itemGroup.justforfun.bryanmod": "Bryan Mod"
 }

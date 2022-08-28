@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 
 public class JustForFun implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
-
+//asd
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");

@@ -2,23 +2,17 @@ package net.guramee.justforfun.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.guramee.justforfun.JustForFun;
-import net.guramee.justforfun.item.custom.ModAxeItem;
-import net.guramee.justforfun.item.custom.ModHoeItem;
-import net.guramee.justforfun.item.custom.ModPickaxeItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.SwordItem;
+import net.guramee.justforfun.item.custom.*;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
 public class ModItems {
 
     public static final Item BRYAN_INGOT = registerItem("bryan_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
 
     public static final Item BRYAN_SWORD = registerItem("bryan_sword",
-            new SwordItem(ModToolMaterial.BRYANTOOL, 25, 1f,
+            new BryanSwordItem(ModToolMaterial.BRYANTOOL, 25, 1f,
                     new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
 
     public static final Item BRYAN_AXE = registerItem("bryan_axe",
@@ -37,6 +31,8 @@ public class ModItems {
             new ModHoeItem(ModToolMaterial.BRYANTOOL, 1, 0f,
                     new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
 
+    public static final Item RANDOM_NUMBER_GENERATOR = registerItem("random_number_generator",
+            new RandomNumberGeneratorItem(new FabricItemSettings().group(ModItemGroup.BRYANMOD).maxCount(1)));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(JustForFun.MOD_ID, name), item);
     }

@@ -18,6 +18,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool()), ModItemGroup.BRYANMOD);
     public static final Block BRYAN_ORE = registerBlock("bryan_ore",
             new Block(FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool()), ModItemGroup.BRYANMOD);
+    public static final Block INTIMIDATING_AURA = registerBlock("intimidating_aura",
+            new Block(FabricBlockSettings.of(Material.SCULK).strength(4f)), ModItemGroup.BRYANMOD);
 
         private static Block registerBlock(String name, Block block, ItemGroup group) {
             registerBlockItem(name, block, group);

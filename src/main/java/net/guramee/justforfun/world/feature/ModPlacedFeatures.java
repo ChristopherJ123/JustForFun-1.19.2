@@ -13,6 +13,10 @@ public class ModPlacedFeatures {
             ModConfiguredFeatures.BRYAN_ORE, modifiersWithCount(30,
                     HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
 
+    public static final RegistryEntry<PlacedFeature> INTIMIDATING_AURA_BLOCK_PLACED = PlacedFeatures.register("intimidating_aura_block_placed",
+            ModConfiguredFeatures.INTIMIDATING_AURA_BLOCK, modifiersWithCount(30,
+                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(184), YOffset.fixed(320))));
+
     private static List<PlacementModifier> modifiers(PlacementModifier countModifier, PlacementModifier heightModifier) {
         return List.of(countModifier, SquarePlacementModifier.of(), heightModifier, BiomePlacementModifier.of());
     }

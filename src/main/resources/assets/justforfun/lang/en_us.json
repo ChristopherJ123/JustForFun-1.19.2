@@ -1,8 +1,10 @@
 {
   "item.justforfun.bryan_ingot": "Bryan Ingot",
+  "item.justforfun.intimidating_aura": "Intimidating Aura",
 
   "block.justforfun.bryan_block": "Bryan Block",
   "block.justforfun.bryan_ore": "Bryan Ore",
+  "block.justforfun.intimidating_aura_block": "Intimidating Aura Block",
 
   "item.justforfun.bryan_sword": "Bryan Sword",
   "item.justforfun.bryan_axe": "Bryan Axe",
@@ -12,5 +14,5 @@
 
   "item.justforfun.random_number_generator": "Random Number Generator",
 
-  "itemGroup.justforfun.bryanmod": "Bryan Mod"
+  "itemGroup.justforfun.bryanmod": "Bryan Gaystrosity"
 }

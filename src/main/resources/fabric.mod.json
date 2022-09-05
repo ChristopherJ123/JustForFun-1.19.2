@@ -3,14 +3,14 @@
   "id": "justforfun",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "JustForFun!",
+  "description": "bryan blocks.. intimidating auras.. what do you expect?",
   "authors": [
-    "Me!"
+    "gurameeXD"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/ChristopherJ123/JustForFun-1.19.2"
   },
 
   "license": "MIT",
@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.guramee.justforfun.JustForFun"
+    ],
+    "client": [
+      "net.guramee.justforfun.JustForFunClient"
     ]
   },
   "mixins": [

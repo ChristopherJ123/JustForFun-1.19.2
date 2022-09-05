@@ -4,13 +4,14 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.guramee.justforfun.JustForFun;
 import net.guramee.justforfun.item.ModItemGroup;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+
 
 public class ModBlocks {
 
@@ -18,10 +19,12 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool()), ModItemGroup.BRYANMOD);
     public static final Block BRYAN_ORE = registerBlock("bryan_ore",
             new Block(FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool()), ModItemGroup.BRYANMOD);
-    public static final Block INTIMIDATING_AURA = registerBlock("intimidating_aura",
-            new Block(FabricBlockSettings.of(Material.SCULK).strength(4f)), ModItemGroup.BRYANMOD);
+    public static final Block INTIMIDATING_AURA_BLOCK = registerBlock("intimidating_aura_block",
+            new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).strength(0.5f).sounds(BlockSoundGroup.SCULK_SENSOR).noCollision()),
+            ModItemGroup.BRYANMOD);
 
-        private static Block registerBlock(String name, Block block, ItemGroup group) {
+
+    private static Block registerBlock(String name, Block block, ItemGroup group) {
             registerBlockItem(name, block, group);
             return Registry.register(Registry.BLOCK, new Identifier(JustForFun.MOD_ID, name), block);
         }

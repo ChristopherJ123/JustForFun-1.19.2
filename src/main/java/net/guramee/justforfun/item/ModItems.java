@@ -31,6 +31,9 @@ public class ModItems {
             new ModHoeItem(ModToolMaterial.BRYANTOOL, 1, 0f,
                     new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
 
+    public static final Item INTIMIDATING_AURA = registerItem("intimidating_aura",
+            new Item(new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
+
     public static final Item RANDOM_NUMBER_GENERATOR = registerItem("random_number_generator",
             new RandomNumberGeneratorItem(new FabricItemSettings().group(ModItemGroup.BRYANMOD).maxCount(1)));
     private static Item registerItem(String name, Item item) {

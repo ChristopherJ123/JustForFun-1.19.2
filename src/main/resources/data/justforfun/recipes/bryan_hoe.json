@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#GG",
+    "#S#",
+    "#S#"
+  ],
+  "key": {
+    "#": {
+      "item": "justforfun:intimidating_aura"
+    },
+    "G": {
+      "item": "justforfun:bryan_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "justforfun:bryan_hoe",
+    "count": 1
+  }
+}

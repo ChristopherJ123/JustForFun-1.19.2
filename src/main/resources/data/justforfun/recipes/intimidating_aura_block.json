@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "justforfun:intimidating_aura"
+    }
+  },
+  "result": {
+    "item": "justforfun:intimidating_aura_block",
+    "count": 1
+  }
+}

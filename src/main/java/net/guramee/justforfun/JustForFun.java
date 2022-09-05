@@ -21,6 +21,7 @@ public class JustForFun implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerMobBlocks();
 
+
 	}
 
 }

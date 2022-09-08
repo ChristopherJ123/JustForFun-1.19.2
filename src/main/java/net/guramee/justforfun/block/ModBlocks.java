@@ -3,6 +3,7 @@ package net.guramee.justforfun.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.guramee.justforfun.JustForFun;
+import net.guramee.justforfun.block.custom.IntimidatingAuraBlock;
 import net.guramee.justforfun.item.ModItemGroup;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -20,7 +21,7 @@ public class ModBlocks {
     public static final Block BRYAN_ORE = registerBlock("bryan_ore",
             new Block(FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool()), ModItemGroup.BRYANMOD);
     public static final Block INTIMIDATING_AURA_BLOCK = registerBlock("intimidating_aura_block",
-            new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).strength(0.5f).sounds(BlockSoundGroup.SCULK_SENSOR).noCollision()),
+            new IntimidatingAuraBlock(FabricBlockSettings.copy(Blocks.GLASS).strength(0.5f).sounds(BlockSoundGroup.SCULK_SENSOR).noCollision()),
             ModItemGroup.BRYANMOD);
 
 

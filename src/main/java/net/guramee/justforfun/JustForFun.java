@@ -2,6 +2,7 @@ package net.guramee.justforfun;
 
 import net.fabricmc.api.ModInitializer;
 import net.guramee.justforfun.block.ModBlocks;
+import net.guramee.justforfun.effect.ModEffects;
 import net.guramee.justforfun.item.ModItems;
 import net.guramee.justforfun.world.feature.ModConfiguredFeatures;
 import net.guramee.justforfun.world.gen.ModOreGeneration;
@@ -21,6 +22,7 @@ public class JustForFun implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerMobBlocks();
 
+		ModEffects.registerEffects();
 
 	}
 

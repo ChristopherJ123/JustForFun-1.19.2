@@ -43,7 +43,7 @@ public class RandomNumberGeneratorItem extends Item {
     }
 
     private int getRandomNumber() {
-        return Random.createLocal().nextInt(1000);
+        return (int) (Math.random() * 1001);
     }
 
 }

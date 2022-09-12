@@ -31,6 +31,10 @@ public class ModItems {
             new ModHoeItem(ModToolMaterial.BRYANTOOL, 1, 0f,
                     new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
 
+    public static final Item WEIRD_SWORD = registerItem("weird_sword",
+            new BryanSwordItem(ModToolMaterial.BRYANTOOL, 100, 1f,
+                    new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
+
     public static final Item INTIMIDATING_AURA = registerItem("intimidating_aura",
             new Item(new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
 

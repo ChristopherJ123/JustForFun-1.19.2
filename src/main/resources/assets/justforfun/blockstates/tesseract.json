@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "justforfun:block/tesseract"
+    },
+    "facing=east": {
+      "model": "justforfun:block/tesseract",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "justforfun:block/tesseract",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "justforfun:block/tesseract",
+      "y": 270
+    }
+  }
+}

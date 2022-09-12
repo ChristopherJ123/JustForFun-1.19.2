@@ -5,16 +5,21 @@
   "block.justforfun.bryan_block": "Bryan Block",
   "block.justforfun.bryan_ore": "Bryan Ore",
   "block.justforfun.intimidating_aura_block": "Intimidating Aura Block",
+  "block.justforfun.tesseract": "§6§lTesseract",
 
   "item.justforfun.bryan_sword": "Bryan Sword",
   "item.justforfun.bryan_axe": "Bryan Axe",
   "item.justforfun.bryan_pickaxe": "Bryan Pickaxe",
   "item.justforfun.bryan_shovel": "Bryan Shovel",
   "item.justforfun.bryan_hoe": "Bryan Hoe",
+  "item.justforfun.weird_sword": "§2Weird Sword",
 
   "item.justforfun.random_number_generator": "Random Number Generator",
 
   "effect.justforfun.gay": "Gayness",
+
+  "sounds.justforfun.tesseract_break": "Tesseract Broken",
+  "sounds.justforfun.tesseract_place": "Tesseract Placed",
 
   "itemGroup.justforfun.bryanmod": "Bryan Gaystrosity"
 }

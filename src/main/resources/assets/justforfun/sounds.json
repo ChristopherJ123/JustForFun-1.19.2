@@ -1,0 +1,20 @@
+{
+  "tesseract_break" : {
+    "subtitle": "justforfun.tesseract_break",
+    "sounds": [
+      "justforfun:tesseract_break1",
+      "justforfun:tesseract_break2",
+      "justforfun:tesseract_break3",
+      "justforfun:tesseract_break4"
+    ]
+  },
+  "tesseract_place" : {
+    "subtitle": "justforfun.tesseract_place",
+    "sounds": [
+      "justforfun:tesseract_place1",
+      "justforfun:tesseract_place2",
+      "justforfun:tesseract_place3",
+      "justforfun:tesseract_place4"
+    ]
+  }
+}

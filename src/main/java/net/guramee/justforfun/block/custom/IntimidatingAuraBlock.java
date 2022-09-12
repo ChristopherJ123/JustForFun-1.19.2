@@ -21,8 +21,9 @@ public class IntimidatingAuraBlock extends GlassBlock {
     @SuppressWarnings("deprecation")
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         LivingEntity livingEntity;
-        if (entity instanceof LivingEntity && !(livingEntity = (LivingEntity)entity).isInvulnerableTo(DamageSource.WITHER)) {
-            livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.GAY, 40));
+        if (entity instanceof LivingEntity && !(livingEntity = (LivingEntity)entity).hasStatusEffect(ModEffects.GAY)) {
+            livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.GAY,
+                    40, 0, false, false));
         }
     }
 }

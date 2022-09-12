@@ -1,0 +1,111 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "justforfun:item/weirdsword/sword_handle1",
+		"1": "justforfun:item/weirdsword/sword_handle2",
+		"2": "justforfun:block/bryan_block",
+		"particle": "justforfun:item/weirdsword/sword_handle1"
+	},
+	"elements": [
+		{
+			"name": "sword base2",
+			"from": [5.92807, 6.38896, 7.25],
+			"to": [7.92807, 10.38896, 7.75],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [6.92807, 9.38896, 7.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "sword base1",
+			"from": [7, 4, 7.25],
+			"to": [9, 7, 7.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 0.5, 8.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 3, 16, 16], "texture": "#2"},
+				"south": {"uv": [2, 0, 16, 16], "texture": "#2"},
+				"west": {"uv": [1, 3, 16, 16], "texture": "#2"},
+				"up": {"uv": [16, 16, 2, 3], "texture": "#2"},
+				"down": {"uv": [16, 0, 4, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "sword handle2",
+			"from": [6.5, 3, 6.75],
+			"to": [9.5, 4, 8.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 0.5, 8.5]},
+			"faces": {
+				"north": {"uv": [6, 0, 12, 2], "texture": "#1"},
+				"east": {"uv": [6, 4, 9, 6], "texture": "#1"},
+				"south": {"uv": [6, 2, 12, 4], "texture": "#1"},
+				"west": {"uv": [6, 6, 9, 8], "texture": "#1"},
+				"up": {"uv": [6, 3, 0, 0], "texture": "#1"},
+				"down": {"uv": [6, 4, 0, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "sword handle1",
+			"from": [7, 0, 7.25],
+			"to": [9, 3, 7.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 0.5, 8.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 6], "texture": "#0"},
+				"east": {"uv": [0, 6, 1, 12], "texture": "#0"},
+				"south": {"uv": [4, 0, 8, 6], "texture": "#0"},
+				"west": {"uv": [2, 6, 3, 12], "texture": "#0"},
+				"up": {"uv": [8, 7, 4, 6], "texture": "#0"},
+				"down": {"uv": [12, 0, 8, 1], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0.75, 8.75, 2],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, 0],
+			"translation": [-0.75, 8.75, 2],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [-0.25, 9, 1.25],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, 0],
+			"translation": [-1.75, 9, 1.25],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"ground": {
+			"rotation": [-90, 0, 0]
+		},
+		"gui": {
+			"rotation": [0, 0, -45],
+			"translation": [3.5, 2.5, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"fixed": {
+			"translation": [0, 4.5, 0],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	},
+	"groups": [
+		0,
+		1,
+		{
+			"name": "sword handle group",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [2, 3]
+		}
+	]
+}

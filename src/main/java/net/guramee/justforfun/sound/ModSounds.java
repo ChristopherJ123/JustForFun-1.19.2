@@ -10,6 +10,7 @@ import net.minecraft.util.registry.Registry;
 public class ModSounds {
     public static SoundEvent TESSERACT_BREAK = registerSoundEvent("tesseract_break");
     public static SoundEvent TESSERACT_PLACE = registerSoundEvent("tesseract_place");
+    public static SoundEvent AMOGUS_IDLE = registerSoundEvent("amogus_idle");
 
     public static final BlockSoundGroup TESSERACT_SOUNDS = new BlockSoundGroup(1f,1f,
             ModSounds.TESSERACT_BREAK, SoundEvents.BLOCK_STONE_STEP, ModSounds.TESSERACT_PLACE,

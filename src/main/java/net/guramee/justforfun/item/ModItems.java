@@ -2,6 +2,7 @@ package net.guramee.justforfun.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.guramee.justforfun.JustForFun;
+import net.guramee.justforfun.entity.ModEntities;
 import net.guramee.justforfun.item.custom.*;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -40,6 +41,10 @@ public class ModItems {
 
     public static final Item RANDOM_NUMBER_GENERATOR = registerItem("random_number_generator",
             new RandomNumberGeneratorItem(new FabricItemSettings().group(ModItemGroup.BRYANMOD).maxCount(1)));
+
+    public static final Item AMOGUS_SPAWN_EGG = registerItem("amogus_spawn_egg",
+            new SpawnEggItem(ModEntities.AMOGUS, 0xFF7C53, 0xFF3C00,
+                    new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(JustForFun.MOD_ID, name), item);
     }

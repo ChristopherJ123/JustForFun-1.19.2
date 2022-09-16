@@ -16,5 +16,13 @@
       "justforfun:tesseract_place3",
       "justforfun:tesseract_place4"
     ]
+  },
+  "amogus_idle" : {
+    "subtitle": "justforfun.amogus",
+    "sounds": [
+      "justforfun:amogus_normal_pitch",
+      "justforfun:amogus_med_pitch",
+      "justforfun:amogus_high_pitch"
+    ]
   }
 }

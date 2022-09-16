@@ -1,5 +1,6 @@
 package net.guramee.justforfun.effect;
 
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
 
@@ -8,9 +9,14 @@ public class GayEffect extends StatusEffect {
         super(statusEffectCategory, color);
     }
 
+    @Override
+    public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+        entity.setFrozenTicks(200);
+    }
 
     @Override
     public boolean canApplyUpdateEffect(int pDuration, int pAmplifier) {
         return true;
     }
+
 }

@@ -45,6 +45,10 @@ public class ModItems {
     public static final Item AMOGUS_SPAWN_EGG = registerItem("amogus_spawn_egg",
             new SpawnEggItem(ModEntities.AMOGUS, 0xFF7C53, 0xFF3C00,
                     new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
+
+    public static final Item OWL_SPAWN_EGG = registerItem("owl_spawn_egg",
+            new SpawnEggItem(ModEntities.OWL, 0x6D5845, 0xA99582,
+                    new FabricItemSettings().group(ModItemGroup.BRYANMOD)));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(JustForFun.MOD_ID, name), item);
     }

@@ -24,5 +24,11 @@
       "justforfun:amogus_med_pitch",
       "justforfun:amogus_high_pitch"
     ]
+  },
+  "owl_idle" : {
+    "subtitle": "justforfun.owl",
+    "sounds": [
+      "justforfun:owl_idle"
+    ]
   }
 }

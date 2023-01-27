@@ -1,9 +1,7 @@
 package net.guramee.justforfun.entity.client;
 
-import com.mojang.datafixers.FunctionType;
 import net.guramee.justforfun.JustForFun;
 import net.guramee.justforfun.entity.custom.AmogusEntity;
-import net.guramee.justforfun.entity.variant.AmogusVariant;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 

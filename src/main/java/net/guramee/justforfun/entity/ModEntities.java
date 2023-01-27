@@ -3,6 +3,7 @@ package net.guramee.justforfun.entity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.guramee.justforfun.JustForFun;
 import net.guramee.justforfun.entity.custom.AmogusEntity;
+import net.guramee.justforfun.entity.custom.OwlEntity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -14,4 +15,8 @@ public class ModEntities {
             Registry.ENTITY_TYPE, new Identifier(JustForFun.MOD_ID, "amogus"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, AmogusEntity::new)
                     .dimensions(EntityDimensions.fixed(1f, 1.5f)).build());
+    public static final EntityType<OwlEntity> OWL = Registry.register(
+            Registry.ENTITY_TYPE, new Identifier(JustForFun.MOD_ID, "owl"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, OwlEntity::new)
+                    .dimensions(EntityDimensions.fixed(1f,1.5f)).build());
 }

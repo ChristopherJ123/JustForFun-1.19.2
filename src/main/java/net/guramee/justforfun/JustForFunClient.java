@@ -8,6 +8,7 @@ import net.guramee.justforfun.block.ModBlocks;
 import net.guramee.justforfun.client.GayEffectOverlay;
 import net.guramee.justforfun.entity.ModEntities;
 import net.guramee.justforfun.entity.client.AmogusRenderer;
+import net.guramee.justforfun.entity.client.OwlRenderer;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.EntityRenderer;
 
@@ -20,5 +21,6 @@ public class JustForFunClient implements ClientModInitializer {
         HudRenderCallback.EVENT.register(new GayEffectOverlay());
 
         EntityRendererRegistry.register(ModEntities.AMOGUS, AmogusRenderer::new);
+        EntityRendererRegistry.register(ModEntities.OWL, OwlRenderer::new);
     }
 }

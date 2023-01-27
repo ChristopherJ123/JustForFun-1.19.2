@@ -14,7 +14,6 @@ import net.minecraft.util.Identifier;
 public class GayEffectOverlay implements HudRenderCallback {
     public static final Identifier GAY_AURA = new Identifier(JustForFun.MOD_ID, "textures/hud/gay_aura_overlay.png");
 
-    @Override
     public void onHudRender(MatrixStack matrixStack, float tickDelta) {
         int x = 0;
         int y = 0;

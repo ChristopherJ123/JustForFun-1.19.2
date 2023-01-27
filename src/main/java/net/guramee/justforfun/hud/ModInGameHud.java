@@ -2,23 +2,28 @@ package net.guramee.justforfun.hud;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.guramee.justforfun.JustForFun;
+import net.guramee.justforfun.entity.ModEntity;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawableHelper;
 import net.minecraft.client.render.*;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
+//unsed
 public class ModInGameHud extends DrawableHelper {
 
     private int scaledWidth;
     private int scaledHeight;
 
-    public void render(MatrixStack matrices, float tickDelta) {
-        int k;
-        float g;
-        this.scaledWidth = this.client.getWindow().getScaledWidth();
-        this.scaledHeight = this.client.getWindow().getScaledHeight();
-        if (this.client.player.getFrozenTicks() > 0) {
+    public void render(MatrixStack matrixStack, float tickDelta) {
+        int x = 0;
+        int y = 0;
+        MinecraftClient client = MinecraftClient.getInstance();
+        if (client != null) {
+            int width = client.getWindow().getScaledWidth();
+            int height = client.getWindow().getScaledHeight();}
+
+        if (this.client.player.getFrozenTicks() == 200) {
             this.modRenderOverlay(GAY_AURA, this.client.player.getFreezingScale());
         }
     }
